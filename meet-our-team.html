@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechVentures - Meet Our Team</title>
+  <title>Meet Our Team - TechVentures</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* Global Styles */
@@ -11,107 +11,104 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      color: #333;
     }
 
-    /* Header Styles */
-    header {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Hero Section */
+    .hero {
       background-color: #0077b6;
       color: #fff;
-      padding: 2rem;
+      padding: 80px 0;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
     }
 
-    header p {
-      font-size: 1.5rem;
-      margin-top: 0;
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 0;
     }
 
-    /* Team Section Styles */
-    .team-section {
-      padding: 3rem;
-    }
-
+    /* Team Section */
     .team-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 40px;
     }
 
     .team-card {
-      background-color: #fff;
-      border-radius: 0.5rem;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .team-card:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .team-card-image {
-      height: 12rem;
+    .team-card .profile-photo {
+      width: 100%;
+      height: 200px;
       background-color: #0077b6;
       display: flex;
       justify-content: center;
       align-items: center;
       color: #fff;
-      font-size: 3rem;
+      font-size: 48px;
       font-weight: bold;
     }
 
-    .team-card-content {
-      padding: 1.5rem;
+    .team-card .info {
+      padding: 20px;
     }
 
-    .team-card-content h3 {
+    .team-card h3 {
       margin-top: 0;
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
     }
 
-    .team-card-content p {
+    .team-card p {
       margin-top: 0;
-      margin-bottom: 1rem;
-      color: #555;
+      margin-bottom: 16px;
     }
 
-    .team-card-social {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-
-    .team-card-social a {
+    .team-card .social-links a {
       color: #0077b6;
-      margin: 0 0.5rem;
-      font-size: 1.2rem;
+      margin-right: 12px;
+      font-size: 20px;
     }
 
-    /* Contact Section Styles */
-    .contact-section {
-      background-color: #0077b6;
-      color: #fff;
-      padding: 3rem;
+    /* Contact Section */
+    .contact {
+      background-color: #f5f5f5;
+      padding: 40px 0;
       text-align: center;
     }
 
-    .contact-section h2 {
+    .contact h2 {
       margin-top: 0;
+      margin-bottom: 16px;
     }
 
-    .contact-section p {
-      margin-bottom: 2rem;
+    .contact p {
+      margin-top: 0;
+      margin-bottom: 24px;
     }
 
-    .contact-section a {
-      color: #fff;
+    .contact a {
+      color: #0077b6;
       text-decoration: none;
     }
 
@@ -130,5 +127,6 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>TechV
+  <div class="hero">
+    <h1>TechVentures</h1>
+    <p>Building Tomorrow's Solutions</p>
